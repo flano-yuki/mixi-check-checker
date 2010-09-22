@@ -1,6 +1,6 @@
 ﻿{
     "name" : "Mixi Check Checker",
-    "version" : "0.0.13",
+    "version" : "0.0.14",
     "description" : "表示ページがmixiチェック可能かを知らせます(非対応サイトも一部独自対応!!)",
     "background_page" : "background.html",
     "permissions" : [
