@@ -1,0 +1,13 @@
+0.0.13 some bug fix about page-action that includes mixi-check .
+0.0.12 option page that selection open-window or open-tab.
+0.0.11 rewite some code
+0.0.10 fix original implementing url(del nicovideo,nicolib. add item.rakuten.co.jp) 
+0.0.9 message change
+0.0.8 urlEncode bug fix
+0.0.7 can check favotter,pixiv,nicovideo,nicolib,ameblo
+0.0.6 some bug fix
+0.0.5 some bug fix
+0.0.4 can check amazon,twitter,google,yahoo...
+0.0.3 implementing sevral button type.
+0.0.2 this is first public version.
+0.0.1 local test.

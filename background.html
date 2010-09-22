@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<script type="text/javascript">
+var checkurl="";
+
+chrome.browserAction.onClicked.addListener(function(tab){
+	if(checkurl!="")
+	{
+		if((localStorage["type"])=="window")
+		{
+			window.open(checkurl);
+		}
+		else if((localStorage["type"])=="tab")
+		{
+			chrome.tabs.create({url:checkurl});
+		}
+	}
+});
+
+chrome.extension.onRequest.addListener(
+	function(request, sender, sendResponse) {
+		checkurl=request.checkurl;
+		if(request.checkurl!="")
+		{
+			chrome.tabs.getSelected(null,function(tab){
+				chrome.browserAction.setIcon({path:'enable.png', tabId:tab.id});
+			});
+		}
+		else
+		{
+			chrome.tabs.getSelected(null,function(tab){
+				chrome.browserAction.setIcon({path:'disable.png', tabId:tab.id});
+			});
+		}
+	 sendResponse({});
+  }
+);
+</script>
+</head>
+</html>

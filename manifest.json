@@ -1,0 +1,21 @@
+﻿{
+    "name" : "Mixi Check Checker",
+    "version" : "0.0.13",
+    "description" : "表示ページがmixiチェック可能かを知らせます(非対応サイトも一部独自対応!!)",
+    "background_page" : "background.html",
+    "permissions" : [
+        "tabs"
+    ],
+    "browser_action" : {
+        "default_title" : "mixi CC",
+        "default_icon" : "icon.png"
+    },
+    "content_scripts": [
+    {
+      "matches": ["http://*/*"],
+      "js": ["myscript.js"],
+      "run_at":"document_end"
+    }
+  ],
+    "options_page" : "options.html"
+}
