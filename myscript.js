@@ -14,6 +14,11 @@ urlkey["item.rakuten.co.jp"]="3abc7f6717a3c984097c82d6d5b44849594a5342";
 urlkey["www.rakuten.co.jp"]="3abc7f6717a3c984097c82d6d5b44849594a5342";
 urlkey["ameblo.jp"]="3abc7f6717a3c984097c82d6d5b44849594a5342";
 
+urlkey["gigazine.net"]="3abc7f6717a3c984097c82d6d5b44849594a5342";
+urlkey["d.hatena.ne.jp"]="3abc7f6717a3c984097c82d6d5b44849594a5342";
+urlkey["www.gizmodo.jp"]="3abc7f6717a3c984097c82d6d5b44849594a5342";
+urlkey["www.youtube.com"]="3abc7f6717a3c984097c82d6d5b44849594a5342";
+
 if(/http:\/\/mixi.jp\/share.pl/.test(window.location.href))
 	return ;
 
